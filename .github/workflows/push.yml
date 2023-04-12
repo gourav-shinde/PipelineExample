@@ -42,9 +42,11 @@ jobs:
     - name: RunLint
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: echo LINT
+
   test:
 
     runs-on: windows-latest
+
     steps:
 
     - name: Setup VSTest.exe
